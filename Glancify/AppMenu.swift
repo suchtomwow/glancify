@@ -32,8 +32,4 @@ class AppMenu: NSMenu {
 
   @objc private func quit() {
   }
-
-  override func validateMenuItem(_ menuItem: NSMenuItem) -> Bool {
-    return true
-  }
 }
