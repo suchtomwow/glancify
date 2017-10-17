@@ -13,7 +13,7 @@ class SettingsViewController: NSViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    // Do any additional setup after loading the view.
+    view.layer?.backgroundColor = NSColor.red.cgColor
   }
 
   override var representedObject: Any? {
@@ -21,7 +21,5 @@ class SettingsViewController: NSViewController {
     // Update the view, if already loaded.
     }
   }
-
-
 }
 

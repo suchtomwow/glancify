@@ -16,6 +16,8 @@
 		E9DE40011F95BD9700416A17 /* LetsMove.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9DE40001F95BD6A00416A17 /* LetsMove.framework */; };
 		E9DE40021F95BD9700416A17 /* LetsMove.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9DE40001F95BD6A00416A17 /* LetsMove.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E9FCE7DF1F95C063005F9945 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FCE7DE1F95C063005F9945 /* Config.swift */; };
+		E9FCE7E11F95C433005F9945 /* AppMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FCE7E01F95C433005F9945 /* AppMenu.swift */; };
+		E9FCE7E31F95C4EA005F9945 /* NSStoryboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FCE7E21F95C4EA005F9945 /* NSStoryboardName.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +47,8 @@
 		E9DE3FFC1F95BC7D00416A17 /* Glancify-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Glancify-Bridging-Header.h"; sourceTree = "<group>"; };
 		E9DE40001F95BD6A00416A17 /* LetsMove.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LetsMove.framework; sourceTree = "<group>"; };
 		E9FCE7DE1F95C063005F9945 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		E9FCE7E01F95C433005F9945 /* AppMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenu.swift; sourceTree = "<group>"; };
+		E9FCE7E21F95C4EA005F9945 /* NSStoryboardName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSStoryboardName.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +83,14 @@
 			isa = PBXGroup;
 			children = (
 				E97DC6F61F914F0100D047C6 /* AppDelegate.swift */,
+				E9FCE7E01F95C433005F9945 /* AppMenu.swift */,
 				E97DC6F81F914F0100D047C6 /* SettingsViewController.swift */,
 				E97DC6FA1F914F0100D047C6 /* Assets.xcassets */,
 				E97DC6FC1F914F0100D047C6 /* Main.storyboard */,
 				E97DC6FF1F914F0100D047C6 /* Info.plist */,
 				E9FCE7DE1F95C063005F9945 /* Config.swift */,
 				E97DC70A1F914F8B00D047C6 /* NSImageName.swift */,
+				E9FCE7E21F95C4EA005F9945 /* NSStoryboardName.swift */,
 				E97DC70C1F914F9300D047C6 /* Spotify.swift */,
 				E9DE3FF51F95A86600416A17 /* Glancify.entitlements */,
 				E9DE3FFC1F95BC7D00416A17 /* Glancify-Bridging-Header.h */,
@@ -166,7 +172,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9FCE7E11F95C433005F9945 /* AppMenu.swift in Sources */,
 				E9DE3FF81F95B9C100416A17 /* NSImageName.swift in Sources */,
+				E9FCE7E31F95C4EA005F9945 /* NSStoryboardName.swift in Sources */,
 				E9DE3FF71F95B9B400416A17 /* SettingsViewController.swift in Sources */,
 				E9FCE7DF1F95C063005F9945 /* Config.swift in Sources */,
 				E9DE3FF91F95B9C400416A17 /* Spotify.swift in Sources */,

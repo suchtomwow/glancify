@@ -28,6 +28,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   }
 
   func applicationDidFinishLaunching(_ aNotification: Notification) {
+    let menu = AppMenu()
+    statusItem.menu = menu
     updateIcon()
     Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateIcon), userInfo: nil, repeats: true)
   }
@@ -41,7 +43,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
       image = NSImage(named: .pause)
     }
 
-    statusItem.button?.image = image
+    statusItem.image = image
   }
 }
 
