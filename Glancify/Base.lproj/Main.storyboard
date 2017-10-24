@@ -4,6 +4,7 @@
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -23,7 +24,11 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
-                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
+                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW">
+                                            <connections>
+                                                <segue destination="B8D-0N-5wS" kind="show" id="rB7-G7-QCI"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
                                         <menuItem title="Services" id="NMo-om-nkz">
                                             <modifierMask key="keyEquivalentModifierMask"/>
@@ -675,18 +680,39 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Glancify" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Glancify" customModuleProvider="target">
+                    <connections>
+                        <outlet property="statusMenu" destination="KHX-R9-ctM" id="Drb-57-CYp"/>
+                    </connections>
+                </customObject>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+                <menu id="KHX-R9-ctM" userLabel="Status Menu">
+                    <items>
+                        <menuItem title="Preferences" keyEquivalent="," id="Y2o-hm-4Tr">
+                            <connections>
+                                <segue destination="B8D-0N-5wS" kind="show" id="tHc-iz-euK"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="Check for Updates..." id="FEV-Jm-i1T">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                        </menuItem>
+                        <menuItem title="Quit Glancify" keyEquivalent="q" id="dkz-ZS-3Bo">
+                            <connections>
+                                <action selector="terminate:" target="Ady-hI-5gd" id="pC0-jN-kpo"/>
+                            </connections>
+                        </menuItem>
+                    </items>
+                </menu>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="0.0"/>
+            <point key="canvasLocation" x="76" y="-61"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                    <window key="window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
@@ -695,26 +721,98 @@
                         </connections>
                     </window>
                     <connections>
-                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                        <segue destination="6ag-Dn-nH4" kind="relationship" relationship="window.shadowedContentViewController" id="tXZ-pl-lAU"/>
                     </connections>
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="210" y="381"/>
         </scene>
-        <!--Settings View Controller-->
-        <scene sceneID="hIz-AP-VOD">
+        <!--Tab View Controller-->
+        <scene sceneID="I7b-JU-Ksh">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="SettingsViewController" customModule="Glancify" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <tabViewController showSeguePresentationStyle="single" tabStyle="toolbar" id="6ag-Dn-nH4" customClass="TabViewController" customModule="Glancify" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabViewItems>
+                        <tabViewItem label="General" identifier="" image="NSPreferencesGeneral" id="P8b-px-zd4"/>
+                    </tabViewItems>
+                    <tabView key="tabView" type="noTabsNoBorder" id="5lg-GV-Izl">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <font key="font" metaFont="message"/>
+                        <tabViewItems/>
+                        <connections>
+                            <outlet property="delegate" destination="6ag-Dn-nH4" id="veq-Ir-BJU"/>
+                        </connections>
+                    </tabView>
+                    <connections>
+                        <outlet property="tabView" destination="5lg-GV-Izl" id="0oW-2n-Jkl"/>
+                        <segue destination="Bxd-v3-Y4t" kind="relationship" relationship="tabItems" id="VLM-0n-wgd"/>
+                    </connections>
+                </tabViewController>
+                <customObject id="eft-B8-lXC" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="210" y="856"/>
+        </scene>
+        <!--General-->
+        <scene sceneID="ksa-Zh-R9M">
+            <objects>
+                <viewController title="General" showSeguePresentationStyle="single" id="Bxd-v3-Y4t" sceneMemberID="viewController">
+                    <view key="view" id="Umv-EE-M8Z">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="76"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="1000" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zh9-aU-s97">
+                                <rect key="frame" x="20" y="20" width="410" height="36"/>
+                                <subviews>
+                                    <button verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="Z98-ba-C0G">
+                                        <rect key="frame" x="-2" y="20" width="414" height="18"/>
+                                        <buttonCell key="cell" type="check" title="Hide Dock Icon" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="O26-qC-SGT">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <binding destination="7Oi-y5-Fru" name="value" keyPath="values.hideDockIcon" id="9BN-K7-Fkj"/>
+                                        </connections>
+                                    </button>
+                                    <button verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="Xgn-iI-c0I">
+                                        <rect key="frame" x="-2" y="-2" width="414" height="18"/>
+                                        <buttonCell key="cell" type="check" title="Automatically Check For Updates" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="jrT-Yv-mE1">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <binding destination="7Oi-y5-Fru" name="value" keyPath="values.autoCheckForUpdates" id="ES8-vR-dPU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zh9-aU-s97" secondAttribute="trailing" constant="20" id="7MY-Px-gHU"/>
+                            <constraint firstItem="zh9-aU-s97" firstAttribute="leading" secondItem="Umv-EE-M8Z" secondAttribute="leading" constant="20" id="VGL-VY-Whh"/>
+                            <constraint firstItem="zh9-aU-s97" firstAttribute="top" secondItem="Umv-EE-M8Z" secondAttribute="top" constant="20" id="lnV-QE-mRo"/>
+                            <constraint firstAttribute="bottom" secondItem="zh9-aU-s97" secondAttribute="bottom" constant="20" id="tg1-57-g4P"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <userDefaultsController id="LpF-C5-s6r"/>
+                <customObject id="S6d-r5-86d" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <userDefaultsController representsSharedInstance="YES" id="7Oi-y5-Fru"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="760" y="856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NSPreferencesGeneral" width="32" height="32"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="tHc-iz-euK"/>
+    </inferredMetricsTieBreakers>
 </document>
