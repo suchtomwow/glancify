@@ -20,6 +20,7 @@
 		E9DE40011F95BD9700416A17 /* LetsMove.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9DE40001F95BD6A00416A17 /* LetsMove.framework */; };
 		E9DE40021F95BD9700416A17 /* LetsMove.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9DE40001F95BD6A00416A17 /* LetsMove.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E9E5E5B71FA03CE0002ECBB8 /* fabric.apikey in Resources */ = {isa = PBXBuildFile; fileRef = E9E5E5B51FA02FB7002ECBB8 /* fabric.apikey */; };
+		E9E5E5B81FA0544C002ECBB8 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = E9F365611FA0240B00388DC5 /* dsa_pub.pem */; };
 		E9F365641FA02AD600388DC5 /* FabricService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F365631FA02AD600388DC5 /* FabricService.swift */; };
 		E9FCE7DF1F95C063005F9945 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FCE7DE1F95C063005F9945 /* Config.swift */; };
 		E9FCE7E31F95C4EA005F9945 /* NSStoryboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FCE7E21F95C4EA005F9945 /* NSStoryboardName.swift */; };
@@ -237,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9E5E5B71FA03CE0002ECBB8 /* fabric.apikey in Resources */,
+				E9E5E5B81FA0544C002ECBB8 /* dsa_pub.pem in Resources */,
 				E9DE3FFB1F95BAC800416A17 /* Assets.xcassets in Resources */,
 				E9DE3FFA1F95B9DE00416A17 /* Main.storyboard in Resources */,
 			);
