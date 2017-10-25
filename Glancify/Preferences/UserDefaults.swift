@@ -8,5 +8,4 @@
 
 extension UserDefaults {
   static let hideDockIcon = "hideDockIcon"
-  static let autoCheckForUpdates = "autoCheckForUpdates"
 }

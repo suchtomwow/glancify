@@ -54,6 +54,7 @@
 		E9DE3FF51F95A86600416A17 /* Glancify.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Glancify.entitlements; sourceTree = "<group>"; };
 		E9DE3FFC1F95BC7D00416A17 /* Glancify-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Glancify-Bridging-Header.h"; sourceTree = "<group>"; };
 		E9DE40001F95BD6A00416A17 /* LetsMove.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LetsMove.framework; sourceTree = "<group>"; };
+		E9F365611FA0240B00388DC5 /* dsa_pub.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		E9FCE7DE1F95C063005F9945 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		E9FCE7E21F95C4EA005F9945 /* NSStoryboardName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSStoryboardName.swift; sourceTree = "<group>"; };
 		F73583CA03AB05160A8DCA16 /* Pods_Glancify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Glancify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +113,7 @@
 		E96773731FA00D6F00823773 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E9F365611FA0240B00388DC5 /* dsa_pub.pem */,
 				E97DC6FF1F914F0100D047C6 /* Info.plist */,
 				E9DE3FF51F95A86600416A17 /* Glancify.entitlements */,
 				E9DE3FFC1F95BC7D00416A17 /* Glancify-Bridging-Header.h */,

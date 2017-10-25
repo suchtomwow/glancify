@@ -23,6 +23,12 @@
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem title="Check for Updates..." id="0XI-gC-SPa">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="checkForUpdates:" target="tBR-5t-GCm" id="s8Y-0O-kt5"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
                                         <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW">
                                             <connections>
@@ -686,6 +692,7 @@
                     </connections>
                 </customObject>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+                <customObject id="tBR-5t-GCm" customClass="SUUpdater"/>
                 <menu id="KHX-R9-ctM" userLabel="Status Menu">
                     <items>
                         <menuItem title="Preferences" keyEquivalent="," id="Y2o-hm-4Tr">
@@ -695,6 +702,9 @@
                         </menuItem>
                         <menuItem title="Check for Updates..." id="FEV-Jm-i1T">
                             <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="checkForUpdates:" target="tBR-5t-GCm" id="zBb-lt-Dyq"/>
+                            </connections>
                         </menuItem>
                         <menuItem title="Quit Glancify" keyEquivalent="q" id="dkz-ZS-3Bo">
                             <connections>
@@ -781,7 +791,7 @@
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
                                         <connections>
-                                            <binding destination="7Oi-y5-Fru" name="value" keyPath="values.autoCheckForUpdates" id="ES8-vR-dPU"/>
+                                            <binding destination="tiP-9f-b7f" name="value" keyPath="automaticallyChecksForUpdates" id="hJq-lS-Xxa"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -804,6 +814,7 @@
                     </view>
                 </viewController>
                 <customObject id="S6d-r5-86d" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="tiP-9f-b7f" customClass="SUUpdater"/>
                 <userDefaultsController representsSharedInstance="YES" id="7Oi-y5-Fru"/>
             </objects>
             <point key="canvasLocation" x="760" y="856"/>

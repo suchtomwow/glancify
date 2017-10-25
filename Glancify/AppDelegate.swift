@@ -54,7 +54,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   private func registerDefaults() {
     let defaults: [String: Any] = [
       UserDefaults.hideDockIcon: true,
-      UserDefaults.autoCheckForUpdates: true
     ]
     
     UserDefaults.standard.register(defaults: defaults)
