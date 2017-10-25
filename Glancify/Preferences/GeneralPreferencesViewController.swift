@@ -18,14 +18,11 @@ class GeneralPreferencesViewController: NSViewController {
 
   private func setupObservers() {
     UserDefaults.standard.addObserver(self, forKeyPath: UserDefaults.hideDockIcon, options: .new, context: nil)
-    UserDefaults.standard.addObserver(self, forKeyPath: UserDefaults.autoCheckForUpdates, options: .new, context: nil)
   }
 
   override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
     if let keyPath = keyPath {
       switch keyPath {
-      case UserDefaults.autoCheckForUpdates:
-        print("")
       case UserDefaults.hideDockIcon:
         DockIconService.updateDockVisibility(toHidden: UserDefaults.standard.bool(forKey: keyPath))
       default:

@@ -14,11 +14,13 @@
 		E96773701FA00BEE00823773 /* DockIconService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E967736F1FA00BEE00823773 /* DockIconService.swift */; };
 		E9DE3FF61F95B9AE00416A17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97DC6F61F914F0100D047C6 /* AppDelegate.swift */; };
 		E9DE3FF81F95B9C100416A17 /* NSImageName.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97DC70A1F914F8B00D047C6 /* NSImageName.swift */; };
-		E9DE3FF91F95B9C400416A17 /* Spotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97DC70C1F914F9300D047C6 /* Spotify.swift */; };
+		E9DE3FF91F95B9C400416A17 /* SpotifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97DC70C1F914F9300D047C6 /* SpotifyService.swift */; };
 		E9DE3FFA1F95B9DE00416A17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E97DC6FC1F914F0100D047C6 /* Main.storyboard */; };
 		E9DE3FFB1F95BAC800416A17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E97DC6FA1F914F0100D047C6 /* Assets.xcassets */; };
 		E9DE40011F95BD9700416A17 /* LetsMove.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9DE40001F95BD6A00416A17 /* LetsMove.framework */; };
 		E9DE40021F95BD9700416A17 /* LetsMove.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9DE40001F95BD6A00416A17 /* LetsMove.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E9E5E5B71FA03CE0002ECBB8 /* fabric.apikey in Resources */ = {isa = PBXBuildFile; fileRef = E9E5E5B51FA02FB7002ECBB8 /* fabric.apikey */; };
+		E9F365641FA02AD600388DC5 /* FabricService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F365631FA02AD600388DC5 /* FabricService.swift */; };
 		E9FCE7DF1F95C063005F9945 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FCE7DE1F95C063005F9945 /* Config.swift */; };
 		E9FCE7E31F95C4EA005F9945 /* NSStoryboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FCE7E21F95C4EA005F9945 /* NSStoryboardName.swift */; };
 /* End PBXBuildFile section */
@@ -49,12 +51,15 @@
 		E97DC6FD1F914F0100D047C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E97DC6FF1F914F0100D047C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E97DC70A1F914F8B00D047C6 /* NSImageName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSImageName.swift; sourceTree = "<group>"; };
-		E97DC70C1F914F9300D047C6 /* Spotify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spotify.swift; sourceTree = "<group>"; };
+		E97DC70C1F914F9300D047C6 /* SpotifyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyService.swift; sourceTree = "<group>"; };
 		E9DE3FE51F95A79700416A17 /* Glancify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glancify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9DE3FF51F95A86600416A17 /* Glancify.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Glancify.entitlements; sourceTree = "<group>"; };
 		E9DE3FFC1F95BC7D00416A17 /* Glancify-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Glancify-Bridging-Header.h"; sourceTree = "<group>"; };
 		E9DE40001F95BD6A00416A17 /* LetsMove.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LetsMove.framework; sourceTree = "<group>"; };
+		E9E5E5B51FA02FB7002ECBB8 /* fabric.apikey */ = {isa = PBXFileReference; lastKnownFileType = text; name = fabric.apikey; path = Glancify/Resources/fabric.apikey; sourceTree = SOURCE_ROOT; };
+		E9E5E5B61FA02FF7002ECBB8 /* fabric.buildsecret */ = {isa = PBXFileReference; lastKnownFileType = text; path = fabric.buildsecret; sourceTree = "<group>"; };
 		E9F365611FA0240B00388DC5 /* dsa_pub.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
+		E9F365631FA02AD600388DC5 /* FabricService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabricService.swift; sourceTree = "<group>"; };
 		E9FCE7DE1F95C063005F9945 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		E9FCE7E21F95C4EA005F9945 /* NSStoryboardName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSStoryboardName.swift; sourceTree = "<group>"; };
 		F73583CA03AB05160A8DCA16 /* Pods_Glancify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Glancify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +118,8 @@
 		E96773731FA00D6F00823773 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E9E5E5B51FA02FB7002ECBB8 /* fabric.apikey */,
+				E9E5E5B61FA02FF7002ECBB8 /* fabric.buildsecret */,
 				E9F365611FA0240B00388DC5 /* dsa_pub.pem */,
 				E97DC6FF1F914F0100D047C6 /* Info.plist */,
 				E9DE3FF51F95A86600416A17 /* Glancify.entitlements */,
@@ -144,15 +151,24 @@
 			children = (
 				E97DC6F61F914F0100D047C6 /* AppDelegate.swift */,
 				E9FCE7DE1F95C063005F9945 /* Config.swift */,
-				E97DC70C1F914F9300D047C6 /* Spotify.swift */,
 				E96773721FA00D3900823773 /* Constants */,
 				E96773711FA00D0400823773 /* Preferences */,
 				E96773731FA00D6F00823773 /* Resources */,
+				E9F365651FA02AF400388DC5 /* Services */,
 				E97DC6FA1F914F0100D047C6 /* Assets.xcassets */,
 				E97DC6FC1F914F0100D047C6 /* Main.storyboard */,
 				E9DE40001F95BD6A00416A17 /* LetsMove.framework */,
 			);
 			path = Glancify;
+			sourceTree = "<group>";
+		};
+		E9F365651FA02AF400388DC5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E97DC70C1F914F9300D047C6 /* SpotifyService.swift */,
+				E9F365631FA02AD600388DC5 /* FabricService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +185,7 @@
 				E9DE40031F95BD9700416A17 /* Embed Frameworks */,
 				D6666BCDFB8C608556AB8391 /* [CP] Embed Pods Frameworks */,
 				4E12517A4E6FA681001ADD2E /* [CP] Copy Pods Resources */,
+				E9F365621FA02A4F00388DC5 /* Crashlytics */,
 			);
 			buildRules = (
 			);
@@ -219,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9E5E5B71FA03CE0002ECBB8 /* fabric.apikey in Resources */,
 				E9DE3FFB1F95BAC800416A17 /* Assets.xcassets in Resources */,
 				E9DE3FFA1F95B9DE00416A17 /* Main.storyboard in Resources */,
 			);
@@ -280,6 +298,20 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Glancify/Pods-Glancify-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E9F365621FA02A4F00388DC5 /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Crashlytics;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FABRIC_APIKEY_FILE=\"${SRCROOT}/Glancify/Resources/fabric.apikey\"\nFABRIC_BUILDSECRET_FILE=\"${SRCROOT}/Glancify/Resources/fabric.buildsecret\"\n\nif test ! -f \"$FABRIC_APIKEY_FILE\" -o ! -f \"$FABRIC_BUILDSECRET_FILE\"; then\n  echo \"This build wants to upload dSYM files to Crashlytics.\"\n  echo \"Uploading is possible only if a Fabric API key and a Fabric build secret are\"\n  echo \"available. This build is failing because at least one of these pieces of\"\n  echo \"information is missing.\"\n  echo \"\"\n  echo \"To fix the problem, create the following files and store the API key and\"\n  echo \"build secret, respectively, within those files:\"\n  echo \"\"\n  echo \"  $FABRIC_APIKEY_FILE\"\n  echo \"  $FABRIC_BUILDSECRET_FILE\"\n  echo \"\"\n  echo \"If you forked the project then you must register with Crashlytics and\"\n  echo \"get your own API key and build secret.\"\n\n  # Let the build fail\n  exit 1\nfi\n\nFABRIC_APIKEY=$(cat \"$FABRIC_APIKEY_FILE\")\nif test $? -ne 0; then\n  echo \"Cannot read $FABRIC_APIKEY_FILE\"\n  exit 1\nfi\n\nFABRIC_BUILDSECRET=$(cat \"$FABRIC_BUILDSECRET_FILE\")\nif test $? -ne 0; then\n  echo \"Cannot read $FABRIC_BUILDSECRET_FILE\"\n  exit 1\nfi\n\necho \"$FABRIC_APIKEY\"\necho \"$FABRIC_BUILDSECRET\"\necho \"Uploading dSYM files to Crashlytics\"\n\"${PODS_ROOT}/Fabric/run\" \"$FABRIC_APIKEY\" \"$FABRIC_BUILDSECRET\"";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -289,12 +321,13 @@
 			files = (
 				E967736E1FA00B8700823773 /* GeneralPreferencesViewController.swift in Sources */,
 				E96773681F9FF0BA00823773 /* TabViewController.swift in Sources */,
+				E9F365641FA02AD600388DC5 /* FabricService.swift in Sources */,
 				E9DE3FF81F95B9C100416A17 /* NSImageName.swift in Sources */,
 				E9FCE7E31F95C4EA005F9945 /* NSStoryboardName.swift in Sources */,
 				E967736A1F9FF9B600823773 /* UserDefaults.swift in Sources */,
 				E96773701FA00BEE00823773 /* DockIconService.swift in Sources */,
 				E9FCE7DF1F95C063005F9945 /* Config.swift in Sources */,
-				E9DE3FF91F95B9C400416A17 /* Spotify.swift in Sources */,
+				E9DE3FF91F95B9C400416A17 /* SpotifyService.swift in Sources */,
 				E9DE3FF61F95B9AE00416A17 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +461,7 @@
 				CODE_SIGN_ENTITLEMENTS = Glancify/Resources/Glancify.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = H8B2H49X66;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

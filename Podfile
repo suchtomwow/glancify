@@ -4,5 +4,7 @@
 target 'Glancify' do
   use_frameworks!
 
+  pod 'Fabric'
+  pod 'Crashlytics'
   pod 'Sparkle'
 end

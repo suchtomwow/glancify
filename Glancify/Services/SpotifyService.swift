@@ -1,5 +1,5 @@
 //
-//  Spotify.swift
+//  SpotifyService.swift
 //  Spotify Status
 //
 //  Created by Thomas Carey on 10/13/17.
@@ -8,7 +8,7 @@
 
 import Cocoa
 
-struct Spotify {
+struct SpotifyService {
   enum Status: String {
     case playing = "kPSP"
     case paused = "kPSp"

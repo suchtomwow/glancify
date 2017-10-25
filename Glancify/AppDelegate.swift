@@ -9,11 +9,11 @@
 // TODO:
 // * Preference pane
 //   * Hide dock icon ✅
-//   * Autoupdate check pref
+//   * Autoupdate check pref ✅
 //   * Start at login
 // * Integrate LetsMove ✅
 // * App icon
-// * Crashlytics
+// * Crashlytics ✅
 
 import Cocoa
 
@@ -22,10 +22,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
   @IBOutlet weak var statusMenu: NSMenu!
 
-  let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
-  let spotify = Spotify()
+  private let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
+  private let spotify = SpotifyService()
 
   func applicationWillFinishLaunching(_ notification: Notification) {
+    FabricService.start()
     if Configuration.isRelease {
       PFMoveToApplicationsFolderIfNecessary()
     }
