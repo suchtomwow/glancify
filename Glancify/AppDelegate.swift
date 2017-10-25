@@ -32,6 +32,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     registerDefaults()
+    applyDefaults()
   }
 
   func applicationDidFinishLaunching(_ aNotification: Notification) {
@@ -58,5 +59,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     ]
     
     UserDefaults.standard.register(defaults: defaults)
+  }
+
+  private func applyDefaults() {
+    DockIconService.updateDockVisibility(toHidden: UserDefaults.standard.bool(forKey: UserDefaults.hideDockIcon))
   }
 }
