@@ -756,7 +756,7 @@
         <!--General-->
         <scene sceneID="ksa-Zh-R9M">
             <objects>
-                <viewController title="General" showSeguePresentationStyle="single" id="Bxd-v3-Y4t" sceneMemberID="viewController">
+                <viewController title="General" showSeguePresentationStyle="single" id="Bxd-v3-Y4t" customClass="GeneralPreferencesViewController" customModule="Glancify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="Umv-EE-M8Z">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="76"/>
                         <autoresizingMask key="autoresizingMask"/>

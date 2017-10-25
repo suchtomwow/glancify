@@ -8,12 +8,13 @@
 
 // TODO:
 // * Preference pane
-//   * Hide dock icon
-//   * Autoupdate
-//   * Shows app icon when displayed
+//   * Hide dock icon ✅
+//   * Autoupdate check pref
+//   * Check for updates periodically if pref turned on
 //   * Start at login
 // * Integrate LetsMove ✅
 // * App icon
+// * Crashlytics
 
 import Cocoa
 
@@ -31,7 +32,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     registerDefaults()
-    observePreferenceChanges()
   }
 
   func applicationDidFinishLaunching(_ aNotification: Notification) {
@@ -60,39 +60,4 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     UserDefaults.standard.register(defaults: defaults)
   }
-
-  private func updateDockVisibility(toHidden hidden: Bool) {
-    if hidden {
-      NSApp.setActivationPolicy(.accessory)
-    } else {
-      NSApp.setActivationPolicy(.regular)
-    }
-  }
-
-  // MARK: - KVO -
-
-  private func observePreferenceChanges() {
-    UserDefaults.standard.addObserver(self, forKeyPath: UserDefaults.hideDockIcon, options: .new, context: nil)
-    UserDefaults.standard.addObserver(self, forKeyPath: UserDefaults.autoCheckForUpdates, options: .new, context: nil)
-  }
-
-  override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-    if let keyPath = keyPath {
-      switch keyPath {
-      case UserDefaults.autoCheckForUpdates:
-        print("")
-      case UserDefaults.hideDockIcon:
-        updateDockVisibility(toHidden: UserDefaults.standard.bool(forKey: keyPath))
-      default:
-        NSLog("Observed unexpected keyPath change: \(keyPath)")
-      }
-    }
-  }
 }
-
-// MARK: - NSMenuDelegate -
-
-extension AppDelegate: NSMenuDelegate {
-
-}
-
