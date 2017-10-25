@@ -10,7 +10,6 @@
 // * Preference pane
 //   * Hide dock icon ✅
 //   * Autoupdate check pref
-//   * Check for updates periodically if pref turned on
 //   * Start at login
 // * Integrate LetsMove ✅
 // * App icon

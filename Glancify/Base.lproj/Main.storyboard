@@ -766,7 +766,7 @@
                                 <subviews>
                                     <button verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="Z98-ba-C0G">
                                         <rect key="frame" x="-2" y="20" width="414" height="18"/>
-                                        <buttonCell key="cell" type="check" title="Hide Dock Icon" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="O26-qC-SGT">
+                                        <buttonCell key="cell" type="check" title="Hide dock icon" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="O26-qC-SGT">
                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
@@ -776,7 +776,7 @@
                                     </button>
                                     <button verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="Xgn-iI-c0I">
                                         <rect key="frame" x="-2" y="-2" width="414" height="18"/>
-                                        <buttonCell key="cell" type="check" title="Automatically Check For Updates" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="jrT-Yv-mE1">
+                                        <buttonCell key="cell" type="check" title="Automatically check for updates" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="jrT-Yv-mE1">
                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>

@@ -87,14 +87,14 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
-		E96773731FA00D6F00823773 /* Config */ = {
+		E96773731FA00D6F00823773 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				E97DC6FF1F914F0100D047C6 /* Info.plist */,
 				E9DE3FF51F95A86600416A17 /* Glancify.entitlements */,
 				E9DE3FFC1F95BC7D00416A17 /* Glancify-Bridging-Header.h */,
 			);
-			path = Config;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		E97DC6EA1F914F0100D047C6 = {
@@ -119,9 +119,9 @@
 				E97DC6F61F914F0100D047C6 /* AppDelegate.swift */,
 				E9FCE7DE1F95C063005F9945 /* Config.swift */,
 				E97DC70C1F914F9300D047C6 /* Spotify.swift */,
-				E96773711FA00D0400823773 /* Preferences */,
-				E96773731FA00D6F00823773 /* Config */,
 				E96773721FA00D3900823773 /* Constants */,
+				E96773711FA00D0400823773 /* Preferences */,
+				E96773731FA00D6F00823773 /* Resources */,
 				E97DC6FA1F914F0100D047C6 /* Assets.xcassets */,
 				E97DC6FC1F914F0100D047C6 /* Main.storyboard */,
 				E9DE40001F95BD6A00416A17 /* LetsMove.framework */,
@@ -339,7 +339,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Glancify/Config/Glancify.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Glancify/Resources/Glancify.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = H8B2H49X66;
@@ -347,11 +347,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Glancify",
 				);
-				INFOPLIST_FILE = Glancify/Config/Info.plist;
+				INFOPLIST_FILE = Glancify/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bls.Glancify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Glancify/Config/Glancify-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Glancify/Resources/Glancify-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
@@ -362,7 +362,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Glancify/Config/Glancify.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Glancify/Resources/Glancify.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = H8B2H49X66;
@@ -370,11 +370,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Glancify",
 				);
-				INFOPLIST_FILE = Glancify/Config/Info.plist;
+				INFOPLIST_FILE = Glancify/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bls.Glancify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Glancify/Config/Glancify-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Glancify/Resources/Glancify-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
