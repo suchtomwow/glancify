@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CDA8E8C067C139F63A0D038B /* Pods_Glancify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73583CA03AB05160A8DCA16 /* Pods_Glancify.framework */; };
 		E96773681F9FF0BA00823773 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96773671F9FF0BA00823773 /* TabViewController.swift */; };
 		E967736A1F9FF9B600823773 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96773691F9FF9B600823773 /* UserDefaults.swift */; };
 		E967736E1FA00B8700823773 /* GeneralPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E967736D1FA00B8700823773 /* GeneralPreferencesViewController.swift */; };
@@ -37,6 +38,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6CD99918D66A38BF5C5B30AD /* Pods-Glancify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Glancify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Glancify/Pods-Glancify.release.xcconfig"; sourceTree = "<group>"; };
+		D3B6A5F241CF38C7412C4266 /* Pods-Glancify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Glancify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Glancify/Pods-Glancify.debug.xcconfig"; sourceTree = "<group>"; };
 		E96773671F9FF0BA00823773 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		E96773691F9FF9B600823773 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		E967736D1FA00B8700823773 /* GeneralPreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPreferencesViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +56,7 @@
 		E9DE40001F95BD6A00416A17 /* LetsMove.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LetsMove.framework; sourceTree = "<group>"; };
 		E9FCE7DE1F95C063005F9945 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		E9FCE7E21F95C4EA005F9945 /* NSStoryboardName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSStoryboardName.swift; sourceTree = "<group>"; };
+		F73583CA03AB05160A8DCA16 /* Pods_Glancify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Glancify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +65,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9DE40011F95BD9700416A17 /* LetsMove.framework in Frameworks */,
+				CDA8E8C067C139F63A0D038B /* Pods_Glancify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		343E35C9E19B298CBE20384B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3B6A5F241CF38C7412C4266 /* Pods-Glancify.debug.xcconfig */,
+				6CD99918D66A38BF5C5B30AD /* Pods-Glancify.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8E050466586CBACC3D6A2875 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F73583CA03AB05160A8DCA16 /* Pods_Glancify.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E96773711FA00D0400823773 /* Preferences */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +124,8 @@
 			children = (
 				E97DC6F51F914F0100D047C6 /* Glancify */,
 				E97DC6F41F914F0100D047C6 /* Products */,
+				343E35C9E19B298CBE20384B /* Pods */,
+				8E050466586CBACC3D6A2875 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,10 +160,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9DE3FF21F95A79700416A17 /* Build configuration list for PBXNativeTarget "Glancify" */;
 			buildPhases = (
+				B58E48FF2DFDA14C93107E67 /* [CP] Check Pods Manifest.lock */,
 				E9DE3FE11F95A79700416A17 /* Sources */,
 				E9DE3FE21F95A79700416A17 /* Frameworks */,
 				E9DE3FE31F95A79700416A17 /* Resources */,
 				E9DE40031F95BD9700416A17 /* Embed Frameworks */,
+				D6666BCDFB8C608556AB8391 /* [CP] Embed Pods Frameworks */,
+				4E12517A4E6FA681001ADD2E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,6 +223,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E12517A4E6FA681001ADD2E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Glancify/Pods-Glancify-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B58E48FF2DFDA14C93107E67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Glancify-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6666BCDFB8C608556AB8391 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Glancify/Pods-Glancify-frameworks.sh",
+				"${PODS_ROOT}/Sparkle/Sparkle.framework",
+				"${PODS_ROOT}/Sparkle/Sparkle.framework.dSYM",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sparkle.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/Sparkle.framework.dSYM",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Glancify/Pods-Glancify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E9DE3FE11F95A79700416A17 /* Sources */ = {
@@ -336,6 +419,7 @@
 		};
 		E9DE3FF31F95A79700416A17 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3B6A5F241CF38C7412C4266 /* Pods-Glancify.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -359,6 +443,7 @@
 		};
 		E9DE3FF41F95A79700416A17 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CD99918D66A38BF5C5B30AD /* Pods-Glancify.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
