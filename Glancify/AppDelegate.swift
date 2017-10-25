@@ -12,7 +12,7 @@
 //   * Autoupdate check pref ✅
 //   * Start at login
 // * Integrate LetsMove ✅
-// * App icon
+// * App icon ✅
 // * Crashlytics ✅
 
 import Cocoa
