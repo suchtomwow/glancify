@@ -7,11 +7,13 @@
 //
 
 struct Configuration {
-  static var isRelease: Bool {
-    var isRelease = false
-    #if Release
-      isRelease = true
+  static let isRelease = !Configuration.isDebug
+
+  static let isDebug: Bool = {
+    var isDebug = false
+    #if DEBUG
+      isDebug = true
     #endif
-    return isRelease
-  }
+    return isDebug
+  }()
 }
