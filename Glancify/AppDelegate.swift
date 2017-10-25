@@ -26,8 +26,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   private let spotify = SpotifyService()
 
   func applicationWillFinishLaunching(_ notification: Notification) {
-    FabricService.start()
     if Configuration.isRelease {
+      FabricService.start()
       PFMoveToApplicationsFolderIfNecessary()
     }
 
