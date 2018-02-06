@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FE77D3420263F0300DDFF92 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FE77D3320263F0300DDFF92 /* ServiceManagement.framework */; };
+		2FE77D3620263FA700DDFF92 /* Glancify Helper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2FE77D3220263EC200DDFF92 /* Glancify Helper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2FE77D382026452A00DDFF92 /* StartAtLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE77D372026452A00DDFF92 /* StartAtLoginService.swift */; };
 		CDA8E8C067C139F63A0D038B /* Pods_Glancify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73583CA03AB05160A8DCA16 /* Pods_Glancify.framework */; };
 		E96773681F9FF0BA00823773 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96773671F9FF0BA00823773 /* TabViewController.swift */; };
 		E967736A1F9FF9B600823773 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96773691F9FF9B600823773 /* UserDefaults.swift */; };
@@ -26,7 +29,27 @@
 		E9FCE7E31F95C4EA005F9945 /* NSStoryboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FCE7E21F95C4EA005F9945 /* NSStoryboardName.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2FE77D3120263EC200DDFF92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FE77D2D20263EC100DDFF92 /* Glancify Helper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2FE77D1C20263EC100DDFF92;
+			remoteInfo = "Glancify Helper";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
+		2FE77D3520263F8400DDFF92 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				2FE77D3620263FA700DDFF92 /* Glancify Helper.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E9DE40031F95BD9700416A17 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,6 +64,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2FE77D2D20263EC100DDFF92 /* Glancify Helper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Glancify Helper.xcodeproj"; path = "Glancify Helper/Glancify Helper.xcodeproj"; sourceTree = "<group>"; };
+		2FE77D3320263F0300DDFF92 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		2FE77D372026452A00DDFF92 /* StartAtLoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartAtLoginService.swift; sourceTree = "<group>"; };
 		6CD99918D66A38BF5C5B30AD /* Pods-Glancify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Glancify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Glancify/Pods-Glancify.release.xcconfig"; sourceTree = "<group>"; };
 		D3B6A5F241CF38C7412C4266 /* Pods-Glancify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Glancify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Glancify/Pods-Glancify.debug.xcconfig"; sourceTree = "<group>"; };
 		E96773671F9FF0BA00823773 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FE77D3420263F0300DDFF92 /* ServiceManagement.framework in Frameworks */,
 				E9DE40011F95BD9700416A17 /* LetsMove.framework in Frameworks */,
 				CDA8E8C067C139F63A0D038B /* Pods_Glancify.framework in Frameworks */,
 			);
@@ -79,6 +106,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FE77D2E20263EC100DDFF92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FE77D3220263EC200DDFF92 /* Glancify Helper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		343E35C9E19B298CBE20384B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +126,7 @@
 		8E050466586CBACC3D6A2875 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2FE77D3320263F0300DDFF92 /* ServiceManagement.framework */,
 				F73583CA03AB05160A8DCA16 /* Pods_Glancify.framework */,
 			);
 			name = Frameworks;
@@ -103,6 +139,7 @@
 				E96773691F9FF9B600823773 /* UserDefaults.swift */,
 				E967736D1FA00B8700823773 /* GeneralPreferencesViewController.swift */,
 				E967736F1FA00BEE00823773 /* DockIconService.swift */,
+				2FE77D372026452A00DDFF92 /* StartAtLoginService.swift */,
 			);
 			path = Preferences;
 			sourceTree = "<group>";
@@ -132,12 +169,15 @@
 		E97DC6EA1F914F0100D047C6 = {
 			isa = PBXGroup;
 			children = (
+				2FE77D2D20263EC100DDFF92 /* Glancify Helper.xcodeproj */,
 				E97DC6F51F914F0100D047C6 /* Glancify */,
 				E97DC6F41F914F0100D047C6 /* Products */,
 				343E35C9E19B298CBE20384B /* Pods */,
 				8E050466586CBACC3D6A2875 /* Frameworks */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
 		};
 		E97DC6F41F914F0100D047C6 /* Products */ = {
 			isa = PBXGroup;
@@ -187,6 +227,7 @@
 				D6666BCDFB8C608556AB8391 /* [CP] Embed Pods Frameworks */,
 				4E12517A4E6FA681001ADD2E /* [CP] Copy Pods Resources */,
 				E9F365621FA02A4F00388DC5 /* Crashlytics */,
+				2FE77D3520263F8400DDFF92 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -225,12 +266,28 @@
 			mainGroup = E97DC6EA1F914F0100D047C6;
 			productRefGroup = E97DC6F41F914F0100D047C6 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2FE77D2E20263EC100DDFF92 /* Products */;
+					ProjectRef = 2FE77D2D20263EC100DDFF92 /* Glancify Helper.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E9DE3FE41F95A79700416A17 /* Glancify */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2FE77D3220263EC200DDFF92 /* Glancify Helper.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Glancify Helper.app";
+			remoteRef = 2FE77D3120263EC200DDFF92 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E9DE3FE31F95A79700416A17 /* Resources */ = {
@@ -328,6 +385,7 @@
 				E9FCE7E31F95C4EA005F9945 /* NSStoryboardName.swift in Sources */,
 				E967736A1F9FF9B600823773 /* UserDefaults.swift in Sources */,
 				E96773701FA00BEE00823773 /* DockIconService.swift in Sources */,
+				2FE77D382026452A00DDFF92 /* StartAtLoginService.swift in Sources */,
 				E9FCE7DF1F95C063005F9945 /* Config.swift in Sources */,
 				E9DE3FF91F95B9C400416A17 /* SpotifyService.swift in Sources */,
 				E9DE3FF61F95B9AE00416A17 /* AppDelegate.swift in Sources */,
@@ -471,6 +529,7 @@
 				);
 				INFOPLIST_FILE = Glancify/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bls.Glancify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Glancify/Resources/Glancify-Bridging-Header.h";
@@ -495,6 +554,7 @@
 				);
 				INFOPLIST_FILE = Glancify/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bls.Glancify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Glancify/Resources/Glancify-Bridging-Header.h";

@@ -7,5 +7,6 @@
 //
 
 extension UserDefaults {
-  static let hideDockIcon = "hideDockIcon"
+    static let hideDockIcon = "hideDockIcon"
+    static let startAtLogin = "startAtLogin"
 }
