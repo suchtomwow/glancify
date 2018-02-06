@@ -18,6 +18,7 @@ class GeneralPreferencesViewController: NSViewController {
 
   private func setupObservers() {
     UserDefaults.standard.addObserver(self, forKeyPath: UserDefaults.hideDockIcon, options: .new, context: nil)
+    UserDefaults.standard.addObserver(self, forKeyPath: UserDefaults.startAtLogin, options: .new, context: nil)
   }
 
   override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
@@ -25,6 +26,8 @@ class GeneralPreferencesViewController: NSViewController {
       switch keyPath {
       case UserDefaults.hideDockIcon:
         DockIconService.updateDockVisibility(toHidden: UserDefaults.standard.bool(forKey: keyPath))
+      case UserDefaults.startAtLogin:
+        StartAtLoginService.updateStartAtLogin(to: UserDefaults.standard.bool(forKey: keyPath))
       default:
         NSLog("Observed unexpected keyPath change: \(keyPath)")
       }

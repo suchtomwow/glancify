@@ -8,12 +8,12 @@
 
 // TODO:
 // * Preference pane
-//   * Hide dock icon ✅
-//   * Autoupdate check pref ✅
-//   * Start at login
-// * Integrate LetsMove ✅
-// * App icon ✅
-// * Crashlytics ✅
+//    ✅ * Hide dock icon
+//    ✅ * Autoupdate check pref
+//       * Start at login
+// ✅ * Integrate LetsMove
+// ✅ * App icon
+// ✅ * Crashlytics
 
 import Cocoa
 
@@ -56,6 +56,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   private func registerDefaults() {
     let defaults: [String: Any] = [
       UserDefaults.hideDockIcon: true,
+      UserDefaults.startAtLogin: false
     ]
     
     UserDefaults.standard.register(defaults: defaults)
